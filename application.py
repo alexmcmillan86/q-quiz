@@ -33,7 +33,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///quiz.db")
+db = SQL("postgres://ntcsyiawhlvfdx:9b862051f17493d8a1a62df4ca635bde468fab3e728fcdb2909b8c46741e1643@ec2-54-247-89-181.eu-west-1.compute.amazonaws.com:5432/d1ngfl7glkmine")
 
 
 @app.route("/welcome", methods=["GET", "POST"])
