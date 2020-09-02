@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Question 19
+{% endblock %}
+
+{% block main %}
+
+<div>
+    <h2 class="topspace"><span class="pink">Q19: </span>Name the animal pictured here?</h2>
+    <img src="/static/animal.png" alt="animal" width='145' height="180" style="margin-top:20px">
+        <section class="question"></section>
+
+        <form action="/question19" method="post">
+            <input type="submit" id="option1" name="answer" value="A. {{ A19 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option2" name="answer" value="B. {{ B19 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option3" name="answer" value="C. {{ C19 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option4" name="answer" value="D. {{ D19 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+        </form>
+</div>
+
+{% endblock %}

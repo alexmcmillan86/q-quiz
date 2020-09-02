@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Question 5
+{% endblock %}
+
+{% block main %}
+
+<div>
+    <h2 class="topspace"><span class="pink">Q5: </span>Which exotic fruit is pictured here?</h2>
+    <img src="/static/fruit.jpg" alt="fruit" width='180' height="120" style="margin-top:20px">
+        <section class="question"></section>
+
+        <form action="/question5" method="post">
+            <input type="submit" id="option1" name="answer" value="A. {{ A5 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option2" name="answer" value="B. {{ B5 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option3" name="answer" value="C. {{ C5 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option4" name="answer" value="D. {{ D5 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+        </form>
+</div>
+
+{% endblock %}

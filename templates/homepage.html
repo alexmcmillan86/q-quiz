@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+{% block main %}
+
+<main class="container p-5">
+    <h2>Quarantine Quiz</h2>
+    <h3>- Instructions -</h3>
+    <section id="whitespace"></section>
+    <div class="parent">
+        <ul>
+            <li>There are 20 questions in total, each correct answer is worth 100 points</li>
+            <li>Each question is multiple choice, select your answer by clicking on it</li>
+            <li>At the end of the quiz your score will be displayed along with the leaderboard</li>
+            <li>For your leaderboard position, note that only your first attempt score will count!</li>
+            <li>You can take the quiz multiple times, and your most recent attempt is shown under current score</li>
+            <li>The number of attempts, your first recorded score and your most recent score can be viewed in the table below</li>
+        </ul>
+    </div>
+
+    <section id="whitespace"></section>
+
+    <table class="table table-striped table-left">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Attempts</th>
+                <th>First Score</th>
+                <th>Current Score</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for i in quiz_data: %}
+            <tr>
+                <td>{{ i.firstname + ' ' + i.lastname }}</td>
+                <td>{{ i.attempts }}</td>
+                <td>{{ i.highscore }}</td>
+                <td>{{ i.score }}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+    <section id="whitespace"></section>
+
+    <a class="btn btn-primary btn-lg btn-pink" style="margin:10px;" href="/leaderboard" role="button">Leaderboard</a>
+    <a class="btn btn-primary btn-lg btn-pink" style="margin:10px;" href="/question1" role="button">&ensp;Start Quiz!&ensp;</a>
+
+</main>
+
+{% endblock %}

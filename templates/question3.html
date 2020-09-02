@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Question 3
+{% endblock %}
+
+{% block main %}
+
+<div>
+    <h2 class="topspace"><span class="pink">Q3: </span>How tall is Mount Everest?</h2>
+        <section class="question"></section>
+
+        <form action="/question3" method="post">
+            <input type="submit" id="option1" name="answer" value="A. {{ A3 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option2" name="answer" value="B. {{ B3 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option3" name="answer" value="C. {{ C3 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option4" name="answer" value="D. {{ D3 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+        </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Question 9
+{% endblock %}
+
+{% block main %}
+
+<div>
+    <h2 class="topspace"><span class="pink">Q9: </span>In poker, what are the odds of getting a royal flush?</h2>
+        <section class="question"></section>
+
+        <form action="/question9" method="post">
+            <input type="submit" id="option1" name="answer" value="A. {{ A9 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option2" name="answer" value="B. {{ B9 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option3" name="answer" value="C. {{ C9 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option4" name="answer" value="D. {{ D9 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+        </form>
+</div>
+
+{% endblock %}

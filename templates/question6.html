@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Question 6
+{% endblock %}
+
+{% block main %}
+
+<div>
+    <h2 class="topspace"><span class="pink">Q6: </span>What is the second tallest building in the world?</h2>
+        <section class="question"></section>
+
+        <form action="/question6" method="post">
+            <input type="submit" id="option1" name="answer" value="A. {{ A6 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option2" name="answer" value="B. {{ B6 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option3" name="answer" value="C. {{ C6 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option4" name="answer" value="D. {{ D6 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+        </form>
+</div>
+
+{% endblock %}

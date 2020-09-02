@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Question 11
+{% endblock %}
+
+{% block main %}
+
+<div>
+    <h2 class="topspace"><span class="pink">Q11: </span>How many wheels does an A380 have?</h2>
+        <section class="question"></section>
+
+        <form action="/question11" method="post">
+            <input type="submit" id="option1" name="answer" value="A. {{ A11 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option2" name="answer" value="B. {{ B11 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option3" name="answer" value="C. {{ C11 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option4" name="answer" value="D. {{ D11 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+        </form>
+</div>
+
+{% endblock %}

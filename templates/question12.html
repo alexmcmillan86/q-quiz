@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Question 12
+{% endblock %}
+
+{% block main %}
+
+<div>
+    <h2 class="topspace"><span class="pink">Q12: </span>What is the biggest city in the world by population?</h2>
+        <section class="question"></section>
+
+        <form action="/question12" method="post">
+            <input type="submit" id="option1" name="answer" value="A. {{ A12 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option2" name="answer" value="B. {{ B12 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option3" name="answer" value="C. {{ C12 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+            <input type="submit" id="option4" name="answer" value="D. {{ D12 }}" class="btn btn-secondary btn-lg btn-block btn-click"></input>
+        </form>
+</div>
+
+{% endblock %}
