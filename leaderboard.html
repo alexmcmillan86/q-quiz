@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Leaderboard
+{% endblock %}
+
+{% block main %}
+
+<h2>Leaderboard</h2>
+
+<section id="whitespace"></section>
+    <table class="table table-striped table-left">
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Name</th>
+                <th>High Score</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for i in data: %}
+            <tr>
+                <td>{{ i.position }}</td>
+                <td>{{ i.firstname + ' ' + i.lastname }}</td>
+                <td>{{ i.highscore }}</td>
+                <td>{{ i.timestamp }}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <a class="btn btn-primary btn-lg btn-pink" style="margin:10px;" href="/" role="button">Home</a>
+</section>
+
+{% endblock %}
