@@ -1,0 +1,81 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* colour of brand title */
+nav .navbar-brand .red
+{
+    color: #cd2658;
+}
+
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+.table-left {
+    text-align: left;
+}
+
+.btn-pink {
+    background-color: #cd2658;
+    border: none;
+}
+
+.btn-pink:hover {
+    background-color: #de4e79;
+}
+
+.parent {
+	text-align: center;
+}
+
+ul {
+	display: inline-block;
+	text-align: left;
+}
+
+#whitespace {
+    padding: 10px;
+    margin: 5px;
+}
+
+.question {
+    padding: 20px;
+    margin: 5px;
+}
+
+.topspace {
+    margin-top: 50px;
+}
+
+.pink {
+    color: #cd2658;
+}
+
+.btn-click:focus {
+    background-color: #de4e79;
+}
